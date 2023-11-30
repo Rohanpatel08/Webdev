@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Coverter - Convert Your Currency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">CurrencyCoverter</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Help</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Convert Your Currency</h1>
+        <form action="" method="get">
+            <label for="quantity">Select Quantity: </label>
+            <input type="number" name="quantity" id="quantity" min="1" placeholder="0">
+            <label for="currency">Choose a Currency: </label>
+            <select name="currency" id="currency">
+                <option value="INR">India Rupee</option>                
+                <option value="USD">US Dollar</option>                
+                <option value="EUR">Euro</option>                
+            </select>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="table">
+            <h1>Converted Currency</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; All rights are reserved - 2023 
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

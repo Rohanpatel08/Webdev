@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter Your Text Here</h1>
+    </div>
+    <textarea name="text" id="textarea"></textarea>
+    <br>
+    <div class="util-btns">
+        <button class="btn" id="upper">UpperCase</button>
+        <button class="btn" id="lower">LowerCase</button>
+        <button class="btn" id="delete">Clear</button>
+        <button class="btn" id="copy">Copy</button>
+        <button class="btn" id="xspace">X-space</button>
+    </div>
+    <br>
+    <div class="text-len">
+        <h2>Length of Text: </h2>
+        <div id="len-txt">0 Words and 0 Characters</div>
+    </div>
+    <br>
+    <div class="text-display" id="txt-output">
+        <h2>Your Text</h2>
+    </div>
+    <div class="container" id="output"></div>
+
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

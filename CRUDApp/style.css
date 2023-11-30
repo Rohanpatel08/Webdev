@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#sidenav
+{
+	background: #fff;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+	position: fixed;
+	height: 100%;
+	width: 15%;
+	top: 0;
+	z-index: 1;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+#sidenav img{
+    height: 130px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 21%;
+}
+#sidenav h2{
+    color: #000;
+    text-align: center;
+    margin-bottom: 0;
+}
+#sidenav h4{
+    color: #000;
+    text-align: center;
+    margin-top: 8px;
+}
+#sidenav a
+{
+	color: #000;
+    text-align: center;
+	padding: 10px 15px 10px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+}
+#sidenav a:hover
+{
+	color: #639fc5;
+    text-decoration: underline;
+}
+.container{
+	display: flex;
+	height: 60px;
+	width: 85%;
+	margin-left: 15%;
+	box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+}
+#ham-menu{
+	display: none;
+    align-items: center;
+    margin-left: 1%;	
+}
+#menu{
+	width: 45px;
+	height: 45px;
+}
+.menu-bar{
+	width: 85%;
+	margin-left: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.menu-bar input{
+	height: 20px;
+	width: 50%;
+	padding: 8px;
+	background-color: #F4F5F7;
+	border: none;
+	border-radius: 5px;
+}
+.auth-btn{
+	display: flex;
+	width: 20%;
+	float: right;
+	justify-content: center;
+    align-items: center;
+}
+.auth-btn a{
+	margin-right: 4px;
+}
+.auth-btn button{
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 14px;
+}
+#signIn{
+	background-color: #000;
+	color: #fff;
+}
+#signUp{
+	background-color: #fff;
+}
+.title{
+	display: block;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+	font-size: 20px;
+}
+.main{
+	width: 85%;
+	margin-left: 15%;
+}
+
+.cards{
+	display: flex;
+	width: 250px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 30px;
+	box-shadow: 3px 2px 3px 2px rgba(0,0,0,.1), 2px 3px 3px -2px rgba(0,0,0,.04);
+	padding: 10px;
+	align-items: center;
+	border-radius: 10px;
+}
+.icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+#one{
+	background-color: #639fc5;
+}
+#two{
+	background-color: #0556fa;
+}
+#three{
+	background-color: #fa9805;
+}
+#four{
+	background-color: #05faf6;
+}
+.card-para{
+	margin-left: 10px;
+	padding: 5px;
+}
+
+@media only screen and (max-width: 1444px) {
+	#sidenav{
+		width: 0;
+		overflow: hidden;
+		transition: 0.3s;
+	}
+	#ham-menu{
+		display: flex;
+		transition: 0.3s;
+	}
+	.container{
+		width: 100%;
+		margin-left: 0;
+	}
+	.main{
+		width: 100%;
+		margin-left: 0;
+	}
+}

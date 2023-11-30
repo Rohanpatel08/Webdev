@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login | CRUD Opps.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="/images/bg.jpg" alt="Tree">
+        </div>
+        <form action="/pages/Login/login.js" name="myForm" onsubmit="return validateForm()" method="post" class="login-form">
+            <h3>Login</h3>
+            <div class="form-input" id="email">
+                <label for="email">Email</label> <span class="formerror"></span>
+                <input type="email" name="fmail" placeholder="JohnDoe@email.com">
+            </div>
+            <div class="form-input" id="password">
+                <label for="password">Password</label> <span class="formerror"></span>
+                <input type="password" name="fpass" placeholder="*************">
+            </div>
+            <input type="submit" value="Login" id="login-btn">
+            <hr>
+            <div>
+                <button class="btns"><b>GitHub</b></button>
+                <button class="btns"><b>Twitter</b></button>
+            </div>
+            <div>
+                <a href="#"><p class="paras"><b>Forgot your password?</b></p></a>
+                <a href="#"><p class="paras" style="margin-bottom: 30px;"><b>Create Account</b></p></a>
+            </div>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
